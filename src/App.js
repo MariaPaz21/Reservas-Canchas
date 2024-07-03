@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import canchas from './canchasData';
+import { canchas, personas } from './canchasData';
 import CanchaCard from './components/CanchaCard';
 import CanchaDrawer from './components/CanchaDrawer';
 

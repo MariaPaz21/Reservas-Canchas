@@ -58,39 +58,43 @@ header {
 
 
 .filter-section button:nth-of-type(1) {
-  background-color: #2d5dfa;
-  color: white;
+  background-color: #88a4ff;
+  color: rgb(4, 16, 49);
 }
 
 .filter-section button:nth-of-type(1):hover {
-  background-color: #1641d1;
+  background-color: #405cb8;
+  color: white;
 }
 
 .filter-section button:nth-of-type(2) {
-  background-color: #e4d500;
-  color: white;
+  background-color: #fff23f;
+  color: rgb(46, 42, 4);
 }
 
 .filter-section button:nth-of-type(2):hover {
-  background-color: #d3be02;
+  background-color: #aa9900;
+  color: white;
 }
 
 .filter-section button:nth-of-type(3) {
-  background-color: #0fa54d;
-  color: white;
+  background-color: #00f165;
+  color: rgb(0, 34, 8);
 }
 
 .filter-section button:nth-of-type(3):hover {
   background-color: #03863e;
-}
-
-.filter-section button:nth-of-type(4) {
-  background-color: #ff0707;
   color: white;
 }
 
+.filter-section button:nth-of-type(4) {
+  background-color: #ff9898;
+  color: rgb(36, 0, 0);
+}
+
 .filter-section button:nth-of-type(4):hover {
-  background-color: #cf0e0e;
+  background-color: #ad3f3f;
+  color: white;
 }
 
 .canchas-grid {

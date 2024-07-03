@@ -1,3 +1,26 @@
+const persona = [
+    {
+        id: 1,
+        name: 'Jorge',
+        pago: true,
+    },
+    {
+        id: 2,
+        name: 'Maria',
+        pago: false,
+    },
+    {
+        id: 3,
+        name: 'Mario',
+        pago: false,
+    },
+    {
+        id: 4,
+        name: 'Michelle',
+        pago: true,
+    },
+];
+
 const canchas = [
     { 
         id: 1, 
@@ -5,7 +28,7 @@ const canchas = [
         price: 4, 
         available: true, 
         descripcion: "Superficie de césped que se habilita para partidos de exhibición.",
-        availableTimes: ['10:00', '12:00', '14:00']
+        availableTimes: ['10:00 - 11:00', '12:00 - 13:30', '14:00 - 14:30']
     },
     { 
         id: 2, 
@@ -13,15 +36,16 @@ const canchas = [
         price: 15, 
         available: true, 
         descripcion: "Cancha con polvo de ladrillo y techo automatico.",
-        availableTimes: ['09:00', '11:00', '13:00']
+        availableTimes: ['09:00 - 10:00', '11:00 - 12:00', '13:00 - 13:30']
     },
     { 
         id: 3, 
         name: 'San Sebastian', 
         price: 10, 
         available: false, 
+        person: 1,
         descripcion: "Cancha de césped al aire libre y cuenta con riego automático.",
-        availableTimes: ['08:00', '10:00', '12:00']
+        availableTimes: ['08:00 - 08:30', '10:00 - 10:30', '12:00 - 13:00']
     },
     { 
         id: 4, 
@@ -29,7 +53,7 @@ const canchas = [
         price: 20, 
         available: true, 
         descripcion: "Cancha de cemento y paredes de vidrio.",
-        availableTimes: ['07:00', '09:00', '11:00']
+        availableTimes: ['07:00 - 07:30', '09:00 - 09:45', '11:00 - 12:00']
     },
     { 
         id: 5, 
@@ -37,15 +61,16 @@ const canchas = [
         price: 6, 
         available: true, 
         descripcion: "Superficie de polvo de ladrillo.",
-        availableTimes: ['06:00', '08:00', '10:00']
+        availableTimes: ['06:00 - 07:00', '08:00 - 08:30', '10:00 - 10:30']
     },
     { 
         id: 6, 
         name: 'La Quinta Resort', 
         price: 2, 
         available: false, 
+        person: 2,
         descripcion: "Cancha de césped al aire libre y cuenta con riego automático.",
-        availableTimes: ['05:00', '07:00', '09:00']
+        availableTimes: ['05:00 - 06:00', '07:00 - 07:30', '09:00 - 10:00']
     },
     { 
         id: 7, 
@@ -53,7 +78,7 @@ const canchas = [
         price: 12, 
         available: true, 
         descripcion: "Superficie de polvo de ladrillo.",
-        availableTimes: ['04:00', '06:00', '08:00']
+        availableTimes: ['14:00 - 14:30', '16:00 - 16:30', '18:00 - 18:30']
     },
     { 
         id: 8, 
@@ -61,16 +86,17 @@ const canchas = [
         price: 8, 
         available: true, 
         descripcion: "Superficie de césped que se habilita para partidos de exhibición.",
-        availableTimes: ['03:00', '05:00', '07:00']
+        availableTimes: ['13:00 - 13:45', '15:00 - 15:30', '17:00 - 18:00']
     },
     { 
         id: 9, 
         name: 'La Cavalerie', 
         price: 10, 
-        available: false, 
+        available: false,
+        person: 4, 
         descripcion: "Cancha con polvo de ladrillo y techo automatico.",
-        availableTimes: ['02:00', '04:00', '06:00']
+        availableTimes: ['12:00 - 12:45', '14:00 - 14:30', '16:00 - 16:30']
     },
 ];
 
-export default canchas;
+export { canchas, persona };

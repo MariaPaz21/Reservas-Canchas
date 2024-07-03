@@ -1,0 +1,158 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  position:relative;
+  top: 10px; 
+  left: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.time-filter {
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+.filter-section label {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.filter-section input[type="time"] {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 10px;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.filter-section button:nth-of-type(1) {
+  background-color: #2d5dfa;
+  color: white;
+}
+
+.filter-section button:nth-of-type(1):hover {
+  background-color: #1641d1;
+}
+
+.filter-section button:nth-of-type(2) {
+  background-color: #e4d500;
+  color: white;
+}
+
+.filter-section button:nth-of-type(2):hover {
+  background-color: #d3be02;
+}
+
+.filter-section button:nth-of-type(3) {
+  background-color: #0fa54d;
+  color: white;
+}
+
+.filter-section button:nth-of-type(3):hover {
+  background-color: #03863e;
+}
+
+.filter-section button:nth-of-type(4) {
+  background-color: #ff0707;
+  color: white;
+}
+
+.filter-section button:nth-of-type(4):hover {
+  background-color: #cf0e0e;
+}
+
+.canchas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  max-height: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.cancha-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cancha-card:hover {
+  transform: scale(1.05);
+}
+
+.drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+}

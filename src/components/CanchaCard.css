@@ -1,0 +1,50 @@
+.cancha-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s;
+  width: 140px;
+}
+.coin {
+  padding-right: 10px;
+}
+.cancha-card__image {
+  position: relative;
+  height: 130px;
+  background: url('https://www.clker.com/cliparts/Z/g/G/x/Y/M/tennis-court-md.png') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 12px;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.status.red {
+  background-color: red;
+}
+
+.status.green {
+  background-color: green;
+}
+
+.cancha-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.cancha-card p {
+  color: #555;
+}
+
+.cancha-card:hover {
+  transform: translateY(-5px);
+}

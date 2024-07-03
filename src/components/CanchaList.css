@@ -1,0 +1,16 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.cancha-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  max-height: 400px;
+  padding: 20px;
+  margin-bottom: 20px;
+}

@@ -5,7 +5,6 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function CanchaDrawer({ cancha, onClose }) {
   const [selectedTime, setSelectedTime] = useState('');
-  const [reservationMessage, setReservationMessage] = useState('');
 
   const getBackgroundColor = (time) => {
     const hour = parseInt(time.split(':')[0], 10);
@@ -26,33 +25,7 @@ function CanchaDrawer({ cancha, onClose }) {
   };
 
   const notify = () => {
-    setReservationMessage('Reserva realizada con éxito para ' + selectedTime);
-    toast.custom((t) => (
-      <div
-        className={`${
-          t.visible ? 'animate-enter' : 'animate-leave'
-        } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
-      >
-        <div className="flex-1 w-0 p-4">
-          <div className="flex items-start">
-            <div className="flex-shrink-0 pt-0.5">
-              <img
-                className="success-icon"
-                src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
-                alt=""
-              />
-            </div>
-            <div className="ml-3 flex-1">
-              <p>{reservationMessage}</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex border-l border-gray-200">
-          <button className="not-button" onClick={() => toast.dismiss(t.id)}></button>
-        </div>
-      </div>
-    ))
-    
+    toast.success(`Reservado horario: ${selectedTime}`);
   };
 
   return (

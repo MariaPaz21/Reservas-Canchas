@@ -214,5 +214,6 @@ header {
 }
 .tennis {
   height: 50px;
-  width: 70px;
+  width: 65px;
+  padding: 3px;
 }

@@ -3,7 +3,7 @@ import './CanchaDrawer.css';
 import { persona } from '../canchasData';
 import toast, { Toaster } from 'react-hot-toast';
 
-function CanchaDrawer({ cancha, onClose }) {
+function CanchaDrawer({ cancha, onClose, addReserva,  }) {
   const [selectedTime, setSelectedTime] = useState('');
 
   const getBackgroundColor = (time) => {
@@ -24,7 +24,13 @@ function CanchaDrawer({ cancha, onClose }) {
     return person ? person.name : 'Desconocido';
   };
 
-  const notify = () => {
+  const handleReservarClick = () => {
+    const reserva = {
+      cancha: cancha.name,
+      horario: selectedTime,
+      precio: cancha.price 
+    };
+    addReserva(reserva);
     toast.success(`Reservado horario: ${selectedTime}`);
   };
 
@@ -60,7 +66,7 @@ function CanchaDrawer({ cancha, onClose }) {
         </ul>
         <button
           disabled={!cancha.available || !selectedTime}
-          onClick={notify}
+          onClick={handleReservarClick}
           className={!cancha.available || !selectedTime ? 'disabled' : 'able'}
         >
           Reservar
@@ -72,3 +78,4 @@ function CanchaDrawer({ cancha, onClose }) {
 }
 
 export default CanchaDrawer;
+

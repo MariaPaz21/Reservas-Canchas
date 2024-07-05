@@ -1,0 +1,57 @@
+.reservas {
+  padding: 20px;
+}
+
+.reservas h2 {
+  text-align: center;
+}
+
+.reservas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reserva {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.cancha, .horario, .precio, .estado {
+  display: flex;
+  align-items: center;
+}
+
+.coin {
+  margin-right: 5px;
+}
+
+.pagar {
+  padding: 5px 10px;
+  background-color: #ffc400;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.volver {
+  padding: 5px 10px;
+  background-color: #027435;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagar:hover {
+  background-color: #caad08;
+}
+
+.volver:hover {
+  background-color: rgb(0, 184, 98);
+}

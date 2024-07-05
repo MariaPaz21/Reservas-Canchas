@@ -28,7 +28,7 @@ const canchas = [
         price: 4, 
         available: true, 
         descripcion: "Superficie de césped que se habilita para partidos de exhibición.",
-        availableTimes: ['10:00 - 11:00', '12:00 - 13:30', '14:00 - 14:30']
+        availableTimes: ['10:00 - 11:00', '14:00 - 14:30']
     },
     { 
         id: 2, 
@@ -36,7 +36,7 @@ const canchas = [
         price: 15, 
         available: true, 
         descripcion: "Cancha con polvo de ladrillo y techo automatico.",
-        availableTimes: ['09:00 - 10:00', '11:00 - 12:00', '13:00 - 13:30']
+        availableTimes: ['09:00 - 10:00', '13:00 - 13:30']
     },
     { 
         id: 3, 
@@ -45,7 +45,7 @@ const canchas = [
         available: false, 
         person: 1,
         descripcion: "Cancha de césped al aire libre y cuenta con riego automático.",
-        availableTimes: ['08:00 - 08:30', '10:00 - 10:30', '12:00 - 13:00']
+        availableTimes: ['08:00 - 08:30', '12:00 - 13:00']
     },
     { 
         id: 4, 
@@ -53,7 +53,7 @@ const canchas = [
         price: 20, 
         available: true, 
         descripcion: "Cancha de cemento y paredes de vidrio.",
-        availableTimes: ['07:00 - 07:30', '09:00 - 09:45', '11:00 - 12:00']
+        availableTimes: ['07:00 - 07:30', '09:00 - 09:45']
     },
     { 
         id: 5, 
@@ -61,7 +61,7 @@ const canchas = [
         price: 6, 
         available: true, 
         descripcion: "Superficie de polvo de ladrillo.",
-        availableTimes: ['06:00 - 07:00', '08:00 - 08:30', '10:00 - 10:30']
+        availableTimes: ['06:00 - 07:00', '08:00 - 08:30']
     },
     { 
         id: 6, 
@@ -70,7 +70,7 @@ const canchas = [
         available: false, 
         person: 2,
         descripcion: "Cancha de césped al aire libre y cuenta con riego automático.",
-        availableTimes: ['05:00 - 06:00', '07:00 - 07:30', '09:00 - 10:00']
+        availableTimes: ['05:00 - 06:00', '07:00 - 07:30']
     },
     { 
         id: 7, 
@@ -78,7 +78,7 @@ const canchas = [
         price: 12, 
         available: true, 
         descripcion: "Superficie de polvo de ladrillo.",
-        availableTimes: ['14:00 - 14:30', '16:00 - 16:30', '18:00 - 18:30']
+        availableTimes: ['16:00 - 16:30', '18:00 - 18:30']
     },
     { 
         id: 8, 
@@ -86,7 +86,7 @@ const canchas = [
         price: 8, 
         available: true, 
         descripcion: "Superficie de césped que se habilita para partidos de exhibición.",
-        availableTimes: ['13:00 - 13:45', '15:00 - 15:30', '17:00 - 18:00']
+        availableTimes: ['15:00 - 15:30', '17:00 - 18:00']
     },
     { 
         id: 9, 
@@ -95,7 +95,7 @@ const canchas = [
         available: false,
         person: 4, 
         descripcion: "Cancha con polvo de ladrillo y techo automatico.",
-        availableTimes: ['12:00 - 12:45', '14:00 - 14:30', '16:00 - 16:30']
+        availableTimes: ['14:00 - 14:30', '16:00 - 16:30']
     },
 ];
 

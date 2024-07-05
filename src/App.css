@@ -13,7 +13,7 @@ header {
 .filter-section {
   position:relative;
   top: 10px; 
-  left: 20px;
+  left: 220px;
   margin: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -21,6 +21,8 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
+  width: 600px;
+  align-items: center;
 }
 
 .time-filter {
@@ -31,7 +33,7 @@ header {
 
 .filter-section label {
   margin: 5px 0;
-  font-weight: bold;
+  font-weight: bold;;
 }
 
 .filter-section input[type="time"] {
@@ -96,6 +98,9 @@ header {
   background-color: #ad3f3f;
   color: white;
 }
+.filter-p {
+  text-align: center;
+}
 
 .canchas-grid {
   display: grid;
@@ -159,4 +164,29 @@ header {
   width: 300px;
   max-height: 80vh;
   overflow-y: auto;
+}
+
+.menu-bottom {
+  position: fixed;
+  bottom: 5px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #c5c5c5;
+  padding: 10px 0;
+  z-index: 1000; 
+  border-radius: 7px;
+}
+
+.menu-bottom button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.menu-bottom button:hover {
+  background-color: #ddd;
 }

@@ -1,0 +1,48 @@
+.pagos {
+    padding: 20px;
+    text-align: center;
+}
+
+.no-pagos {
+    text-align: center;
+}
+
+.no-pagos p {
+    font-size: 16px;
+}
+
+.volver {
+    padding: 7px 12px;
+    background-color: #1cbe65;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.volver:hover {
+    background-color: #008a35;
+}
+
+.pago {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.cancha,
+.precio,
+.fecha {
+    font-size: 16px;
+}
+
+.coin {
+    margin-right: 5px;
+}

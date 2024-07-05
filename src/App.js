@@ -4,6 +4,8 @@ import { canchas } from './canchasData';
 import CanchaCard from './components/CanchaCard';
 import CanchaDrawer from './components/CanchaDrawer';
 import Reservas from './components/Reservas';
+import Pagos from './components/Pagos';
+import tennis from './tennis.png' 
 
 function App() {
   const [selectedCancha, setSelectedCancha] = useState(null);
@@ -12,6 +14,7 @@ function App() {
   const [filteredCanchas, setFilteredCanchas] = useState(canchas);
   const [availableFilter, setAvailableFilter] = useState(null);
   const [reservas, setReservas] = useState([]);
+  const [pagos, setPagos] = useState([]);
   const [currentView, setCurrentView] = useState('home');
 
   const handleTimeChange1 = (event) => {
@@ -67,6 +70,13 @@ function App() {
     const newReservas = [...reservas];
     newReservas[index].pagado = true;
     setReservas(newReservas);
+
+    const paymentInfo = {
+      cancha: newReservas[index].cancha,
+      precio: newReservas[index].precio,
+      fecha: new Date().toLocaleString(), 
+    };
+    setPagos([...pagos, paymentInfo]);
   };
 
   const renderHomeView = () => (
@@ -104,16 +114,22 @@ function App() {
     <Reservas reservas={reservas} handlePayment={handlePayment} goToHome={() => setCurrentView('home')} />
   );
 
+  const renderPagosView = () => (
+    <Pagos pagos={pagos} goToHome={() => setCurrentView('home')} />
+  );
+
   return (
     <div className="App">
       <header>
-        <h1>Mi cancha REACT</h1>
+        <h1>Mi cancha REACT 
+          <img src={tennis} alt='Tennis' className='tennis'></img>
+        </h1>
       </header>
-      {currentView === 'home' ? renderHomeView() : renderReservasView()}
+      {currentView === 'home' ? renderHomeView() : (currentView === 'reservas' ? renderReservasView() : renderPagosView())}
       <div className="menu-bottom">
-        <button onClick={() => alert('Pagos')}>Pagos</button>
-        <button onClick={handleHomeClick}>Home</button>
-        <button onClick={() => setCurrentView('reservas')}>Reservas</button>
+        <button onClick={() => setCurrentView('pagos')} className='button-pagos'>Pagos</button>
+        <button onClick={handleHomeClick} className='button-home'>Home</button>
+        <button onClick={() => setCurrentView('reservas')} className='button-reservas'>Reservas</button>
       </div>
     </div>
   );

@@ -172,14 +172,13 @@ header {
   width: 400px;
   display: flex;
   justify-content: space-around;
-  background-color: #c5c5c5;
+  background-color:rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000; 
   border-radius: 7px;
 }
-
-.menu-bottom button {
-  background-color: #fff;
+.button-pagos {
+  background-color: #f1da74;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -187,6 +186,33 @@ header {
   border-radius: 5px;
 }
 
-.menu-bottom button:hover {
-  background-color: #ddd;
+.button-home {
+  background-color: #7af075;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button-reservas {
+  background-color: #ffa1cd;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-home:hover {
+  background-color: #27ff68;
+}
+.button-pagos:hover {
+  background-color: #fddd4d;
+}
+.button-reservas:hover {
+  background-color: #fa86bc;
+}
+.tennis {
+  height: 50px;
+  width: 70px;
 }
